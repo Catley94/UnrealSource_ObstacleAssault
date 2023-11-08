@@ -1,0 +1,868 @@
+{
+	"folders": [
+		{
+			"name": "UnrealLearningKit",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/home/sam/Documents/UE5.3.2"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp",
+			"vadimcn.vscode-lldb",
+			"ms-vscode.mono-debug",
+			"dfarley1.file-picker"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "UnrealLearningKit Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"Linux",
+					"Debug",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"Linux",
+					"Debug",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKit Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"Linux",
+					"Debug",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"Linux",
+					"DebugGame",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"Linux",
+					"DebugGame",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKit Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"Linux",
+					"DebugGame",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"Linux",
+					"Development",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"Linux",
+					"Development",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKit Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"Linux",
+					"Development",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit Linux Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"Linux",
+					"Test",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"Linux",
+					"Test",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKit Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit Linux Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"Linux",
+					"Test",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit Linux Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"Linux",
+					"Shipping",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"Linux",
+					"Shipping",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKit Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"Linux",
+					"Shipping",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"LinuxArm64",
+					"Debug",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"LinuxArm64",
+					"Debug",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKit LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"LinuxArm64",
+					"Debug",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKit LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"LinuxArm64",
+					"Development",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"LinuxArm64",
+					"Development",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKit LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"LinuxArm64",
+					"Development",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"LinuxArm64",
+					"Test",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"LinuxArm64",
+					"Test",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKit LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"LinuxArm64",
+					"Test",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"LinuxArm64",
+					"Shipping",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"LinuxArm64",
+					"Shipping",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKit LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKit LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKit",
+					"LinuxArm64",
+					"Shipping",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKitEditor Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKitEditor",
+					"Linux",
+					"Debug",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKitEditor Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKitEditor",
+					"Linux",
+					"Debug",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKitEditor Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKitEditor Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKitEditor",
+					"Linux",
+					"Debug",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKitEditor Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKitEditor",
+					"Linux",
+					"DebugGame",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKitEditor Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKitEditor",
+					"Linux",
+					"DebugGame",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKitEditor Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKitEditor Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKitEditor",
+					"Linux",
+					"DebugGame",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKitEditor Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKitEditor",
+					"Linux",
+					"Development",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKitEditor Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKitEditor",
+					"Linux",
+					"Development",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"UnrealLearningKitEditor Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			},
+			{
+				"label": "UnrealLearningKitEditor Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"UnrealLearningKitEditor",
+					"Linux",
+					"Development",
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sam/Documents/UE5.3.2"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch UnrealLearningKit (Debug)",
+				"request": "launch",
+				"program": "/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/Binaries/Linux/UnrealGame-Linux-Debug",
+				"preLaunchTask": "UnrealLearningKit Linux Debug Build",
+				"args": [
+				],
+				"cwd": "/home/sam/Documents/UE5.3.2",
+				"type": "cppdbg",
+				"visualizerFile": "/home/sam/Documents/UE5.3.2/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch UnrealLearningKit (DebugGame)",
+				"request": "launch",
+				"program": "/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/Binaries/Linux/UnrealGame-Linux-DebugGame",
+				"preLaunchTask": "UnrealLearningKit Linux DebugGame Build",
+				"args": [
+				],
+				"cwd": "/home/sam/Documents/UE5.3.2",
+				"type": "cppdbg",
+				"visualizerFile": "/home/sam/Documents/UE5.3.2/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch UnrealLearningKit (Development)",
+				"request": "launch",
+				"program": "/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/Binaries/Linux/UnrealGame",
+				"preLaunchTask": "UnrealLearningKit Linux Development Build",
+				"args": [
+				],
+				"cwd": "/home/sam/Documents/UE5.3.2",
+				"type": "cppdbg",
+				"visualizerFile": "/home/sam/Documents/UE5.3.2/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch UnrealLearningKit (Test)",
+				"request": "launch",
+				"program": "/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/Binaries/Linux/UnrealGame-Linux-Test",
+				"preLaunchTask": "UnrealLearningKit Linux Test Build",
+				"args": [
+				],
+				"cwd": "/home/sam/Documents/UE5.3.2",
+				"type": "cppdbg",
+				"visualizerFile": "/home/sam/Documents/UE5.3.2/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch UnrealLearningKit (Shipping)",
+				"request": "launch",
+				"program": "/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/Binaries/Linux/UnrealGame-Linux-Shipping",
+				"preLaunchTask": "UnrealLearningKit Linux Shipping Build",
+				"args": [
+				],
+				"cwd": "/home/sam/Documents/UE5.3.2",
+				"type": "cppdbg",
+				"visualizerFile": "/home/sam/Documents/UE5.3.2/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch UnrealLearningKitEditor (Debug)",
+				"request": "launch",
+				"program": "/home/sam/Documents/UE5.3.2/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+				"preLaunchTask": "UnrealLearningKitEditor Linux Debug Build",
+				"args": [
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject"
+				],
+				"cwd": "/home/sam/Documents/UE5.3.2",
+				"type": "cppdbg",
+				"visualizerFile": "/home/sam/Documents/UE5.3.2/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch UnrealLearningKitEditor (DebugGame)",
+				"request": "launch",
+				"program": "/home/sam/Documents/UE5.3.2/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+				"preLaunchTask": "UnrealLearningKitEditor Linux DebugGame Build",
+				"args": [
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject"
+				],
+				"cwd": "/home/sam/Documents/UE5.3.2",
+				"type": "cppdbg",
+				"visualizerFile": "/home/sam/Documents/UE5.3.2/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch UnrealLearningKitEditor (Development)",
+				"request": "launch",
+				"program": "/home/sam/Documents/UE5.3.2/Engine/Binaries/Linux/UnrealEditor",
+				"preLaunchTask": "UnrealLearningKitEditor Linux Development Build",
+				"args": [
+					"/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject"
+				],
+				"cwd": "/home/sam/Documents/UE5.3.2",
+				"type": "cppdbg",
+				"visualizerFile": "/home/sam/Documents/UE5.3.2/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Linux Development Build",
+				"program": "/home/sam/Documents/UE5.3.2/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/UnrealLearningKit.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/home/sam/Documents/UE5.3.2"
+			}
+		]
+	}
+}

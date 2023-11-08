@@ -1,0 +1,42 @@
+[
+	{
+		"file": "/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/Source/UnrealLearningKit/MovingPlatform.cpp",
+		"arguments": [
+			"/home/sam/Documents/UE5.3.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/.vscode/compileCommands_Default/UnrealLearningKit.1.rsp"
+		],
+		"directory": "/home/sam/Documents/UE5.3.2/Engine/Source"
+	},
+	{
+		"file": "/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/Source/UnrealLearningKit/MovingPlatform.h",
+		"arguments": [
+			"/home/sam/Documents/UE5.3.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/.vscode/compileCommands_Default/UnrealLearningKit.1.rsp"
+		],
+		"directory": "/home/sam/Documents/UE5.3.2/Engine/Source"
+	},
+	{
+		"file": "/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/Source/UnrealLearningKit/UnrealLearningKit.Build.cs",
+		"arguments": [
+			"/home/sam/Documents/UE5.3.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/.vscode/compileCommands_Default/UnrealLearningKit.1.rsp"
+		],
+		"directory": "/home/sam/Documents/UE5.3.2/Engine/Source"
+	},
+	{
+		"file": "/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/Source/UnrealLearningKit/UnrealLearningKit.cpp",
+		"arguments": [
+			"/home/sam/Documents/UE5.3.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/.vscode/compileCommands_Default/UnrealLearningKit.1.rsp"
+		],
+		"directory": "/home/sam/Documents/UE5.3.2/Engine/Source"
+	},
+	{
+		"file": "/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/Source/UnrealLearningKit/UnrealLearningKit.h",
+		"arguments": [
+			"/home/sam/Documents/UE5.3.2/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sam/Documents/GitHub/UnrealSource_ObstacleAssault/.vscode/compileCommands_Default/UnrealLearningKit.1.rsp"
+		],
+		"directory": "/home/sam/Documents/UE5.3.2/Engine/Source"
+	}
+]

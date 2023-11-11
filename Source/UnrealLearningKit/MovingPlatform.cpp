@@ -17,7 +17,8 @@ void AMovingPlatform::BeginPlay()
 	Super::BeginPlay();
 
 	StartPosition = GetActorLocation();
-	
+
+	UE_LOG(LogTemp, Display, TEXT("Message"));
 }
 
 // Called every frame
